@@ -1,2 +1,4 @@
+pydantic==1.9.0
 pydentic==0.0.1.dev3
 python-stdnum==1.17
+typing_extensions==4.1.1
