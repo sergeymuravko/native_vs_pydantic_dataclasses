@@ -1,0 +1,2 @@
+pydentic==0.0.1.dev3
+python-stdnum==1.17
