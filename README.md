@@ -14,7 +14,8 @@ Simple wrapper for time measure
 All measurements done in loop of 1 000 000
 Measuring results in table presented in seconds
 
-| Action           | Native        | pydantic     |
-| ---------------- | ------------- | ------------ |
-| create           | ~0.444041479  | ~5.404597358 |
-| convert to dict  | ~5.510993991  | ~5.175302796 |
+| Action                      | Native        | pydantic     |
+| --------------------------- | ------------- | ------------ |
+| create                      | ~0.444041479  | ~5.404597358 |
+| convert to dict             | ~5.510993991  | ~5.175302796 |
+| retrieve value of attribute | ~0.054861316  | ~0.049166930 |
