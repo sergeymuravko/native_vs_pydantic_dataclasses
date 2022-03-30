@@ -22,9 +22,15 @@ def convert_to_dict(article: Article) -> None:
 
 
 @timeit
-def retrieve_attribute(article: Article) -> None:
+def get_attribute(article: Article) -> None:
     for i in range(1000000):
         _ = article.title
+
+
+@timeit
+def set_attribute(article: Article) -> None:
+    for i in range(1000000):
+        article.title = 'abc'
 
 
 if __name__ == '__main__':
@@ -34,5 +40,7 @@ if __name__ == '__main__':
     first_article = Article(**data)
     # convert_to_dict(first_article)
     # Converting to dict 1 000 000 of instances of dataclass takes ~5.175302796008 seconds
-    retrieve_attribute(first_article)
-    # Retrieve attribute value 1 000 000 of instances of dataclass takes ~0.049166930999 seconds
+    get_attribute(first_article)
+    # Get attribute value 1 000 000 of instances of dataclass takes ~0.049166930999 seconds
+    set_attribute(first_article)
+    # Set attribute value 1 000 000 of instances of dataclass takes ~0.538404490000 seconds
