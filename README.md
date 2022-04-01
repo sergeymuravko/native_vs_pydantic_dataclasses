@@ -1,5 +1,4 @@
-# Out loud thoughts
-Out loud thoughts about everything.
+# Native VS Pydantic dataclasses
 
 ## Requirements
 Python 3.10.0
